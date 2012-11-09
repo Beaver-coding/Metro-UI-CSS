@@ -31,7 +31,7 @@
     <script src="js/github.info.js"></script>
     <script src="js/google-code-prettify/prettify.js"></script>
 
-    <script src="alert.js"></script>
+    <script src="message-dialogs.js"></script>
 
     <title>Modern UI CSS</title>
 </head>
@@ -46,17 +46,15 @@
 
         <div class="page-header">
             <div class="page-header-content">
-                <h1>Metro Alerts<small>Javascript</small></h1>
+                <h1>Message Dialogs<small>Javascript</small></h1>
                 <a href="/" class="back-button big page-back"></a>
             </div>
         </div>
 
         <div class="page-region">
             <div class="page-region-content">
-                <p>
-                    Metro Alerts let you to easily create Windows 8 styled alerts.
-                </p>
-                 <button onclick="ma('Content for Alert')">
+                
+                 <button onclick="md('Content for Alert')">
                              Demo
                          </button>
             <!--    <div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white" >
@@ -71,13 +69,13 @@
                         <div class="span10">
                             
  <p>
-     <ol>
+     
          
                           
-         <h3>
+         
              
-          To use you must </h3>  
-         include <code>alert.js</code> in your <code>header</code>.  Metro Alerts require <a href="http://jquery.com">jQuery</a>
+          To use you must 
+         include <code>message-dialogs.js</code> in your <code>header</code>.  Message Diaglogs requires <a href="http://jquery.com">jQuery</a>.
         <!-- <li>
          include the following html inside the <code>page-region-content</code> class:
              
@@ -98,7 +96,7 @@
      
                             
 
-               </ol>             
+                          
                      <p>
                         
                         
@@ -111,20 +109,20 @@
                                 
                             </div> -->
 
-                            <h2>
-                                To Create a Metro Alert:
-                            </h2>
+                            <h3>
+                                To Create a Messsage Dialog:
+                            </h3>
                            <p>
-                               Call the function <code>ma( content )</code>.  The paremeter <code>content</code> is required.  
+                               Call the function <code>md( content )</code>.  The paremeter <code>content</code> is required.  
                                
                             </p>
                             <h4>
                               Example  
                             </h4>
 <pre class="prettyprint linenums span10">
-ma("There was an error");
+    md("There was an error");
 </pre>
-                            <button onclick="ma('There was an error')">
+                            <button onclick="md('There was an error')">
                                 Try it
                             </button>
                         </div>

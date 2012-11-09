@@ -1,11 +1,11 @@
-function ma(content) {
+function md(content) {
                             // $("#metro-alert").fadeOut("slow");
                              $("#metro-alert-content").html(content);
                              $("#metro-alert").fadeIn("slow");
                              $("#metro-black").fadeIn("slow");
                              
                          }
-                         function maClose(){
+                         function mdClose(){
                              $("#metro-alert").fadeOut("slow");
                              $("#metro-black").fadeOut("slow");
                              
@@ -23,6 +23,6 @@ var styleElement = document.createElement("style");
   }
   document.getElementsByTagName("head")[0].appendChild(styleElement);
     
-    $('.page-region-content').append('<div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white" > <p id="metro-alert-content" > </p><button class="place-right" onclick="maClose()" >Close </button></div> <div id="metro-black" style="display: none;" ></div> ');
+    $('.page-region-content').append('<div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white" > <p id="metro-alert-content" > </p><button class="place-right" onclick="mdClose()" >Close </button></div> <div id="metro-black" style="display: none;" ></div> ');
 }
 
