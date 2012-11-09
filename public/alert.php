@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-     <script>
+     <!-- <script>
                          function ma(content) {
                             // $("#metro-alert").fadeOut("slow");
                              $("#metro-alert-content").html(content);
@@ -14,7 +14,7 @@
                              $("#metro-black").fadeOut("slow");
                              
                          }
-         </script>
+         </script>  -->
     <meta charset="utf-8">
     <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="Modern UI CSS">
@@ -31,23 +31,41 @@
     <script src="js/github.info.js"></script>
     <script src="js/google-code-prettify/prettify.js"></script>
 
-    <script src="js/rating.js"></script>
+    <script src="alert.js"></script>
 
     <title>Modern UI CSS</title>
 </head>
 <body class="modern-ui" onload="prettyPrint()">
+    
+ 
+<!-- <div id="metro-black" style="display: none;" >
+ 
+</div>  -->
     <div class="page secondary">
         <? include("header.php")?>
 
         <div class="page-header">
             <div class="page-header-content">
-                <h1>Alerts<small>Javascript</small></h1>
+                <h1>Metro Alerts<small>Javascript</small></h1>
                 <a href="/" class="back-button big page-back"></a>
             </div>
         </div>
 
         <div class="page-region">
             <div class="page-region-content">
+                <p>
+                    Metro Alerts let you to easily create Windows 8 styled alerts.
+                </p>
+                 <button onclick="ma('Content for Alert')">
+                             Demo
+                         </button>
+            <!--    <div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white" >
+            <p id="metro-alert-content" >
+                </p>
+                 <button class="place-right" onclick="maClose()" >
+                     Close
+                 </button>
+</div>  -->
                 <div class="grid">
                     <div class="row">
                         <div class="span10">
@@ -59,19 +77,12 @@
          <h3>
              
           To use you must </h3>  
-         <li>
-         Load jquery
-         </li>
-     <li>
-     
-     include <code>alert.js</code> in the <code>head</code> of you page
-     </li>
-         <li>
-         include the following html right after the body tag:
+         include <code>alert.js</code> in your <code>header</code>.  Metro Alerts require <a href="http://jquery.com">jQuery</a>
+        <!-- <li>
+         include the following html inside the <code>page-region-content</code> class:
              
              <pre class="prettyprint linenums span10">
-&lt;div id="metro-alert" style="z-index: 5000; display: none;" class="message-dialog 
-    bg-color-green fg-color-white" &gt;
+&lt;div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white" &gt;
             &lt;p id="metro-alert-content" &gt;
                 &lt;/p&gt;
                  &lt;button class="place-right" onclick="maClose()" &gt;
@@ -79,35 +90,32 @@
                  &lt;/button&gt;
 &lt;/div&gt; 
 
-&lt;div id="metro-black" style="height: 50000px;position:fixed; top:0px; left: 0px; display: none; 
-    width: 50000px; z-index: 4000; background-color: rgba(0,0,0,.8); " &gt;
+&lt;div id="metro-black" style="display: none;" &gt;
 
 &lt;/div&gt; 
             </pre>
-         </li>
+         </li> -->
      
                             
 
                </ol>             
                      <p>
-                         <button onclick="ma('Content for Alert')">
-                             Demo
-                         </button>
+                        
                         
                        
-                         <div id="metro-alert" style="z-index: 5000; display: none;" class="message-dialog bg-color-green fg-color-white">
+                         <!-- <div id="metro-alert" style="" class="message-dialog bg-color-green fg-color-white">
                                     <p id="metro-alert-content">Content for message dialog</p>
-                                    <button class="place-right" onclick="maClose()">Click me</button>
+                                    <button class="place-right" onclick="maClose()">Close</button>
                                 </div>
-                            <div style="height: 50000px;position:fixed; top:0px; left: 0px; display: none; width: 50000px; z-index: 4000; background-color: rgba(0,0,0,.8); " id="metro-black">
+                            <div style="" id="metro-black">
                                 
-                            </div>
+                            </div> -->
 
                             <h2>
                                 To Create a Metro Alert:
                             </h2>
                            <p>
-                               Call the function <code>ma( content )</code>.  The <code>content</code> is required.  
+                               Call the function <code>ma( content )</code>.  The paremeter <code>content</code> is required.  
                                
                             </p>
                             <h4>
