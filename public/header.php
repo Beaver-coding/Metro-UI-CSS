@@ -75,9 +75,13 @@
                     <li><a href="notices.php">Notices and Replies</a></li>
                     <li class="divider"></li>
                     <li><a href="cards.php">Bonus - Deck of Cards</a></li>
+                    <li class="divider"></li>
+                    <li><a href="alert.html">Metro Alerts</a></li>
                 </ul>
             </li>
 
+            
+            
             <!--<li><a href="javascript.php">Javascript</a></li>-->
             <li><a href="https://github.com/olton/Metro-UI-CSS">Get source</a></li>
         </ul>
